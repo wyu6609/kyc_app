@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo
+  profiles:
+    active: local
+
+  # Common application properties can be added here, for example:
+  server:
+    port: 8080
+
+  logging:
+    level:
+      root: INFO
+      org:
+        springframework:
+          web: DEBUG

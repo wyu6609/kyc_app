@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kyc_db
+    username: your_username
+    password: your_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  profiles:
+    active: local
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
